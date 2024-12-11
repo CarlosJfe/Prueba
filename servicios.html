@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Enlaza a tu archivo JavaScript -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Nuestros Servicios</h1>
+        <ul>
+            <li>Cotizaciones en línea</li>
+            <li>Ventas en línea</li>
+            <li>Asesoría técnica</li>
+        </ul>
+
+        <h2>Cotizaciones en Línea</h2>
+        <form id="cotizacionForm">
+            <fieldset>
+                <legend>Selecciona los Productos</legend>
+                <label for="producto1">
+                    <input type="checkbox" id="producto1" name="productos" value="100">
+                    Producto 1 - $100
+                </label><br>
+                <label for="producto2">
+                    <input type="checkbox" id="producto2" name="productos" value="200">
+                    Producto 2 - $200
+                </label><br>
+                <label for="producto3">
+                    <input type="checkbox" id="producto3" name="productos" value="300">
+                    Producto 3 - $300
+                </label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de Cliente</legend>
+                <select id="tipoCliente" name="tipoCliente" required>
+                    <option value="" disabled selected>Seleccione el tipo de cliente</option>
+                    <option value="permanente">Permanente</option>
+                    <option value="periodico">Periódico</option>
+                    <option value="casual">Casual</option>
+                    <option value="nuevo">Nuevo</option>
+                </select>
+            </fieldset>
+            <button type="button" onclick="calcularCotizacion()">Calcular Cotización</button>
+        </form>
+        <div id="resultado"></div>
+    </section>
+
+    <footer>
+        <p>Creado por Carlos Castaño © 2024</p>
+    </footer>
+</body>
+</html>
+
